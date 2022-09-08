@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Etiquetas de HTML</title>
+</head>
+<body>
+  <header>
+    <h1>Etiquetas de HTML</h1>
+    <p>Existen algunos tipos de etiquetas que se utilizan de las cuales se pueden mencionar: </p>
+    <ul>
+      <li><a href="#s1">&lt;dl&gt;</a></li>
+      <li><a href="#s2">&lt;dt&gt;</a></li>
+      <li><a href="s3">&lt;dd&gt;</a></li>
+      <li><a href="#s4">&lt;blockquote&gt;</a></li>
+      <li><a href="#s5">&lt;q&gt;</a></li>
+      <li><a href="#s6">&lt;cite&gt;</a></li>
+      <li><a href="#s7">&lt;abbr&gt;</a></li>
+      <li><a href="#s8">&lt;address&gt;</a></li>
+      <li><a href="#s9">&lt;sub&gt;</a></li>
+      <li><a href="#s10">&lt;sup&gt;</a></li>
+      <li><a href="#s11">&lt;code&gt;</a></li>
+      <li><a href="#s12">&lt;pre&gt;</a></li>
+      <li><a href="#s13">&lt;var&gt;</a></li>
+      <li><a href="#s14">&lt;kbd&gt;</a></li>
+      <li><a href="#s15">&lt;samp&gt;</a></li>
+      <li><a href="#s16">&lt;time&gt;</a></li>
+    </ul>
+  </header>
+  <hr>
+  <div id="s1">
+    <h2>&lt;dl&gt;</h2>
+    <p>Se utiliza para listas descriptivas, es decir, una lista de grupos de términos (uso de &lt;dt&gt) y descripciones (uso de &lt;dd&gt).
+      <br>Es de utilidad para la realización de glosarios o el desplazamiento de metadatos.
+    </p>
+    <h3>Ejemplos</h3>
+
+    <p><strong>Término sencillo y descripción sencilla:</strong></p>
+    <pre>
+      &lt;dl&gt;
+        &lt;dt&gt;Madrid&lt;/dt&gt;
+        &lt;dd&gt;Capital de España&lt;/dd&gt;
+      &lt;/dl&gt
+    </pre>
+    <p><em>El como se muestra es:</em></p>
+    <dl>
+      <dt>Madrid</dt>
+      <dd>Capital de España</dd>
+    </dl>
+
+    <p><strong>Múltiples términos y una descripción sencilla:</strong></p>
+    <pre>
+      &lt;dl&gt;
+        &lt;dt&gt;México&lt;/dt&gt;
+        &lt;dt&gt;Popocatépetl&lt;/dt&gt;
+        &lt;dd&gt;Volcán que se encuentra en México y pertenece al Cinturón de Fuego&lt;/dd&gt;
+      &lt;/dl&gt
+    </pre>
+    <p><em>El como se muestra es:</em></p>
+    <dl>
+      <dt>México</dt>
+      <dt>Popocatépetl</dt>
+      <dd>Volcán que se encuentra en México y pertenece al Cinturón de Fuego</dd>
+    </dl>
+
+    <p><strong>Un solo término y varias descripciones:</strong></p>
+    <pre>
+      &lt;dl&gt;
+        &lt;dt&gt;Banco&lt;/dt&gt;
+        &lt;dd&gt;Objeto que se utiliza para sentarse.&lt;/dd&gt;
+        &lt;dd&gt;Lugar a donde acudes a realizar cuestiones como depositar o retirar dinero.&lt;/dd&gt;
+      &lt;/dl&gt
+    </pre>
+    <p><em>El como se muestra es:</em></p>
+    <dl>
+      <dt>Banco</dt>
+      <dd>Objeto que se utiliza para sentarse.</dd>
+      <dd>Lugar a donde acudes a realizar cuestiones como depositar o retirar dinero.</dd>
+    </dl>
+    <hr>
+  </div>
+
+  <div id="s2">
+    <h2>&lt;dt&gt;</h2>
+    <p>Especifíca un término dentro de una lista descriptiva, el cual se utiliza dentro de &lt;dl&gt.
+    </p>
+    <h3>Ejemplo</h3>
+
+    <pre>
+      &lt;dl&gt;
+        &lt;dt&gt;Cuidad de México&lt;/dt&gt;
+        &lt;dd&gt;Capital de México&lt;/dd&gt;
+      &lt;/dl&gt
+    </pre>
+    <p>En este ejemplo, el término es: Cuidad de México. <em>El como se muestra es:</em></p>
+    <dl>
+      <dt>Cuidad de México</dt>
+      <dd>Capital de México</dd>
+    </dl>
+    <hr>
+  </div>
+
+  <div id="s3">
+    <h2>&lt;dd&gt;</h2>
+    <p>Descripción o detalles de un término &lt;dt&gt.
+    </p>
+    <h3>Ejemplo</h3>
+    <pre>
+      &lt;dl&gt;
+        &lt;dt&gt;Serpiente&lt;/dt&gt;
+        &lt;dd&gt;Tipo de reptil que se caracteriza principalmente por la carencia de patas.&lt;/dd&gt;
+      &lt;/dl&gt
+    </pre>
+    <p>En este ejemplo, la descripción es: Tipo de reptil que se caracteriza principalmente por la carencia de patas.
+      <em>El como se muestra es:</em></p>
+      <dl>
+        <dt>Serpiente</dt>
+        <dd>Tipo de reptil que se caracteriza principalmente por la carencia de patas.</dd>
+      </dl>
+      <hr>
+    </div>
+
+    <div id="s4">
+      <h2>&lt;blockquote&gt;</h2>
+      <p>
+        Crea citas en bloque, marca las citas a otros autores o documentos.
+        <br>Además, puede tener uno o más elementos de bloque.
+      </p>
+      <h3>Ejemplo</h3>
+      <pre>
+        &lt;blockquote cite="https://es.wikipedia.org/wiki/Luna"&gt
+          La Luna es el único satélite natural de la Tierra.
+          Con un diámetro ecuatorial de 3476 km, es el quinto satélite más grande del sistema solar,
+          mientras que en cuanto al tamaño proporcional respecto a su planeta es el satélite más grande:
+          un cuarto del diámetro de la Tierra y 1/81 de su masa.
+        &lt/blockquote&gt
+      </pre>
+
+      <p><em>El resultado es:</em></p>
+      <blockquote cite="https://es.wikipedia.org/wiki/Luna">
+        La Luna es el único satélite natural de la Tierra.
+        Con un diámetro ecuatorial de 3476 km, es el quinto satélite más grande del sistema solar,
+        mientras que en cuanto al tamaño proporcional respecto a su planeta es el satélite más grande:
+        un cuarto del diámetro de la Tierra y 1/81 de su masa.
+      </blockquote>
+      <hr>
+    </div>
+
+    <div id="s5">
+      <h2>&lt;q&gt;</h2>
+      <p>
+        Indica que el texto adjunto es una cita corta en línea.
+        Este elemento está destinado a citas breves que no requieren saltos de párrafo.
+        <br>Para citas de bloque independiente, se utiliza &lt;blockquote&gt;
+      </p>
+      <h3>Ejemplo</h3>
+      <pre>
+        &lt;p&gt;
+          De acuerdo a wikipedia &lt;q cite="https://es.wikipedia.org/wiki/Luna"&gt
+           La Luna es el único satélite natural de la Tierra.&lt;/q&gt;
+        &lt;/p&gt;
+      </pre>
+
+      <p><em>El resultado es:</em></p>
+      <p>
+        De acuerdo a wikipedia, <q cite="https://es.wikipedia.org/wiki/Luna">
+          La Luna es el único satélite natural de la Tierra.</q>
+      </p>
+        <hr>
+      </div>
+
+      <div id="s6">
+        <h2>&lt;cite&gt;</h2>
+        <p>
+          Hace una referencia a una fuente o el autor de un texto citado.
+          <br>Es un elemento de frase y para marcar al texto esta &lt;q&gt; y &lt;blockquote&gt;.
+        </p>
+        <h3>Ejemplo</h3>
+        <pre>
+          &lt;p&gt;
+            &lt;cite&gt;Juárez&lt;/cite&gt; dijo: "El respeto al derecho ajeno es la paz"
+          &lt;/p&gt;
+        </pre>
+
+        <p><em>El resultado es:</em></p>
+        <p>
+          <cite>Juárez</cite> dijo: "El respeto al derecho ajeno es la paz"
+        </p>
+        <hr>
+      </div>
+
+      <div id="s7">
+        <h2>&lt;abbr&gt;</h2>
+        <p>
+          Representa una abreviación o acrónimo.
+          <br>El atributo opcional title puede dar el significado de la abreviatura.
+        </p>
+        <h3>Ejemplo</h3>
+        <pre>
+          &lt;p&gt;
+            El llamado Protocolo de Internet por sus siglas en inglés &lt;abbr title="Internet Protocol"&gt;IP&lt;/abbr&gt;...
+          &lt;/p&gt;
+        </pre>
+
+        <p><em>El resultado es:</em></p>
+        <p>
+          El llamado Protocolo de Internet por sus siglas en inglés <abbr title="Internet Protocol">IP</abbr>...
+        </p>
+        <hr>
+      </div>
+
+      <div id="s8">
+        <h2>&lt;address&gt;</h2>
+        <p>
+          Es para la información de contacto para el &lt;article&gt; más cercano o ancestro &lt;body&gt; o también lo puede aplicar a todo el documento.
+          <br>En la mayoría de los casos suele ser colocado dentro del &lt;footer&gt; de la sección actual.
+        </p>
+        <h3>Ejemplo</h3>
+        <pre>
+          &lt;address&gt;
+            Contacto: &lt;a href="https://www.google.com/"&gt;Google&lt;/a&gt;
+          &lt;/address&gt;
+        </pre>
+
+        <p><em>El resultado es:</em></p>
+        <address>
+          Contacto: <a href="https://www.google.com/">Google</a>
+        </address>
+        <hr>
+      </div>
+
+      <div id="s9">
+        <h2>&lt;sub&gt;</h2>
+        <p>
+          Se utiliza para mostrar subíndices.
+        </p>
+        <h3>Ejemplo</h3>
+        <pre>
+          &lt;p&gt;
+            La fórmula química del ácido cítrico es: C&lt;sub&gt;6&lt;/sub&gt;H&lt;sub&gt;8&lt;/sub&gt;O&lt;sub&gt;7&lt;/sub&gt;
+          &lt;/p&gt;
+        </pre>
+
+        <p><em>El resultado es:</em></p>
+        <p>
+          La fórmula química del ácido cítrico es: C<sub>6</sub>H<sub>8</sub>O<sub>7</sub>
+        </p>
+        <hr>
+      </div>
+
+      <div id="s10">
+        <h2>&lt;sup&gt;</h2>
+        <p>
+          Se utiliza para mostrar superíndices.
+        </p>
+        <h3>Ejemplo</h3>
+        <pre>
+          &lt;p&gt;
+            Polinomio de grado 2: a&lt;sup&gt;2&lt;/sup&gt; + 2a + 1
+          &lt;/p&gt;
+        </pre>
+
+        <p><em>El resultado es:</em></p>
+        <p>
+          Polinomio de grado 2: a<sup>2</sup> + 2a + 1
+        </p>
+        <hr>
+      </div>
+
+      <div id="s11">
+        <h2>&lt;code&gt;</h2>
+        <p>
+          Inserta texto que es una representación de código de computadora.
+        </p>
+        <h3>Ejemplo</h3>
+        <pre>
+          &lt;code&gt;
+            int main() {
+              printf("Hello World\n");
+              return 0;
+            }
+          &lt;/code&gt;
+        </pre>
+
+        <p><em>El resultado es:</em></p>
+        <code>
+          int main() {
+            printf("Hello World\n");
+            return 0;
+          }
+        </code>
+        <hr>
+      </div>
+
+      <div id="s12">
+        <h2>&lt;pre&gt;</h2>
+        <p>
+          Texto preformateado. Se muestra de forma exacta con una fuente fijada.
+        </p>
+        <h3>Ejemplo</h3>
+        <pre>
+          &lt;pre&gt;
+            int main() {
+              printf("Hello World\n");
+              return 0;
+            }
+          &lt;/pre&gt;
+        </pre>
+
+        <p><em>El resultado es:</em></p>
+        <pre>
+          int main() {
+            printf("Hello World\n");
+            return 0;
+          }
+        </pre>
+        <hr>
+      </div>
+
+      <div id="s13">
+        <h2>&lt;var&gt;</h2>
+        <p>
+          Denota variables de programas y similares.
+        </p>
+        <h3>Ejemplo</h3>
+        <pre>
+          &lt;p&gt;
+            La variable &lt;var&gt;suma&lt;/var&gt; hace referencia a la suma de los números que introduce el usuario.
+          &lt;/p&gt;
+        </pre>
+
+        <p><em>El resultado es:</em></p>
+        <p>
+          La variable <var>suma</var> hace referencia a la suma de los números que introduce el usuario.
+        </p>
+        <hr>
+      </div>
+
+      <div id="s14">
+        <h2>&lt;kbd&gt;</h2>
+        <p>
+          Marca el texto que debe ser introducido por el usuario.
+        </p>
+        <h3>Ejemplo</h3>
+        <pre>
+          &lt;p&gt;
+            En caso de verdadero escriba &lt;kbd&gt;v&lt;/kbd&gt;, en caso falso escriba &lt;kbd&gt;f&lt;/kbd&gt;
+          &lt;/p&gt;
+        </pre>
+
+        <p><em>Lo que se mostrará es:</em></p>
+        <p>
+          En caso de verdadero escriba <kbd>v</kbd>, en caso falso escriba <kbd>f</kbd>
+        </p>
+        <hr>
+      </div>
+
+      <div id="s15">
+        <h2>&lt;samp&gt;</h2>
+        <p>
+          Se utiliza para incluir texto que representa la salida de un programa de computadora.
+        </p>
+        <h3>Ejemplo</h3>
+        <pre>
+          &lt;p&gt;
+            Mostrará el mensaje:
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;samp&gt;Introduzca los números a y b a sumar:&lt;/samp&gt;
+          &lt;/p&gt;
+        </pre>
+
+        <p><em>Lo que se mostrará es:</em></p>
+        <p>
+          Mostrará el mensaje:
+        </p>
+        <p>
+          <samp>Introduzca los números a y b a sumar:</samp>
+        </p>
+        <hr>
+      </div>
+
+      <div id="s16">
+        <h2>&lt;time&gt;</h2>
+        <p>
+          Representa un periodo específico en el tiempo.
+          <ul>
+            <li>Puede incluir el atributo datetime para convertir las fechas a un formato interno legible por una computadora</li>
+            <li>Se puede ver una hora en formato de 24 horas</li>
+            <li>Se puede ver una fecha del calendario Gregoriano</li>
+          </ul>
+        </p>
+        <h3>Ejemplo</h3>
+        <pre>
+          &lt;p&gt;
+            El Grito de Independencia será el &lt;time datetime="2022-09-16"&gt;16 de Septiembre&lt;/time&gt; a las &lt;time&gt;23:00&lt;/time&gt;.
+          &lt;/&gt;
+        </pre>
+
+        <p><em>Lo que se mostrará es:</em></p>
+        <p>
+          El Grito de Independencia será el <time datetime="2022-09-16">16 de Septiembre</time> a las <time>23:00</time>.
+        </p>
+        <hr>
+      </div>
+
+    </body>
+    </html>
