@@ -1,0 +1,32 @@
+html {
+  background-color: orange;
+  font-size: 20px;
+}
+ #ingredientes{
+  background: #77DD77;
+  padding: 10px;
+  border: 1px solid black;
+}
+#proceso{
+ background: #FF8000;
+ padding: 10px;
+ border: 1px solid white;
+}
+#imagesg{
+ background: #70FF8B;
+ padding: 5px;
+ border: 2px solid black;
+}
+#imagess{
+ background: #EAE6CA;
+ padding: 5px;
+ border: 2px solid black;
+}
+#imagesc{
+ background: #00B347;
+ padding: 5px;
+ border: 2px solid black;
+}
+li {
+  margin-left: 15px;
+}
